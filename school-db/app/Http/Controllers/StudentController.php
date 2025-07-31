@@ -11,7 +11,8 @@ class StudentController extends Controller
      */
     public function index()
     {
-        //
+        $students = Student::all();
+        return view('student.index', compact('students'));
     }
 
     /**
@@ -35,7 +36,8 @@ class StudentController extends Controller
      */
     public function show(string $id)
     {
-        //
+        $student = Student::find($id);
+        return view('student.show', compact('student'));
     }
 
     /**
