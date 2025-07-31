@@ -1,6 +1,19 @@
 <html>
     <head>
         <title>Show Details</title>
+        <style>
+            table{
+                border:  1px solid #020202;
+                text-align: left;
+                border-collapse: collapse;
+            }
+            th, td {
+              padding: 8px;
+              text-align: left;
+              border: 1px solid #020202;
+            }
+        </style>
+
     </head>
     <body>
     <h1>Show Details</h1>
@@ -35,5 +48,6 @@
         </tr>
     </table>
     <hr>
+</body>
 
 </html>

@@ -1,6 +1,18 @@
 <html>
     <head>
         <title>Class List</title>
+        <style>
+            table{
+                border:  1px solid #020202;
+                text-align: left;
+                border-collapse: collapse;
+            }
+            th, td {
+              padding: 8px;
+              text-align: left;
+              border: 1px solid #020202;
+            }
+        </style>
     </head>
     <body>
 

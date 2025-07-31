@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Staff;
 
 class StaffController extends Controller
 {
@@ -11,7 +12,11 @@ class StaffController extends Controller
      */
     public function index()
     {
-        //
+
+        // Fetch all staff members from the database
+        $staffs =Staff::all();
+        // Return the view with the staff data
+        return view('staff.index', compact('staffs'));
     }
 
     /**
@@ -35,7 +40,9 @@ class StaffController extends Controller
      */
     public function show(string $id)
     {
-        //
+
+        $staff = Staff::find($id);  
+        return view('staff.show', compact('staff'));
     }
 
     /**
