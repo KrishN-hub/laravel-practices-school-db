@@ -7,3 +7,5 @@
 5. Create a new controller for the database(use App\Http\Controllers\ClassnameController;)
 6. Create a new view for the database
 7. Create a new route for the database
+8. Test the database using the controller and view
+

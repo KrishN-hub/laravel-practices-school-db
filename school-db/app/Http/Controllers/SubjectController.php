@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Subject;
 
 class SubjectController extends Controller
 {
@@ -11,7 +12,10 @@ class SubjectController extends Controller
      */
     public function index()
     {
-        //
+        $subjects = Subject::all();
+        return view('subject.index', compact('subjects'));
+
+
     }
 
     /**
@@ -35,7 +39,8 @@ class SubjectController extends Controller
      */
     public function show(string $id)
     {
-        //
+        $subject = Subject::find($id);
+        return view('subject.show', compact('subject'));
     }
 
     /**
