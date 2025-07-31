@@ -1,7 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ClassnameController;
 
-Route::get('/', function () {
-    return view('welcome');
-});
+
+
+Route::resource('classes', ClassnameController::class);
