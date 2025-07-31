@@ -7,10 +7,14 @@ use Illuminate\Database\Eloquent\Model;
 class Student extends Model
 {
     protected $table = 'student';
-    protected $guard = ['*'];
-
+    protected $guarded = ['*'];
     public function class()
     {
         return $this->belongsTo(Classname::class, 'class_id');
     }
+
+
+
+
+
 }

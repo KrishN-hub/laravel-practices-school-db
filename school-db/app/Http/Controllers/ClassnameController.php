@@ -39,7 +39,8 @@ class ClassnameController extends Controller
     public function show(string $id)
     {
          $class = Classname::find($id);
-         return view('class/show', compact('class'));
+         $students=Classname::find($id)->students;
+         return view('class/show', compact('class','students'));
     }
 
     /**
