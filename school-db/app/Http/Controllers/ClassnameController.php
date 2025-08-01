@@ -40,7 +40,9 @@ class ClassnameController extends Controller
     {
          $class = Classname::find($id);
          $students=Classname::find($id)->students;
-         return view('class/show', compact('class','students'));
+         $staff=Classname::find($id)->staff;
+         $subjects = Classname::find($id)->subjects;
+         return view('class/show', compact('class','students','staff','subjects'));
     }
 
     /**
