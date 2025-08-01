@@ -8,4 +8,11 @@
 6. Create a new view for the database
 7. Create a new route for the database
 8. Test the database using the controller and view
+9. Add relationship between tables (one to one, one to many, many to many)
+10. Add tables in show with relationship to other tables
+<!-- 11. Add validation for the databas
+12. Add middleware for the database -->
+
+
+
 
