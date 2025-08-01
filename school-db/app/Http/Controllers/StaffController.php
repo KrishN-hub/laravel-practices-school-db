@@ -41,8 +41,10 @@ class StaffController extends Controller
     public function show(string $id)
     {
 
-        $staff = Staff::find($id);  
-        return view('staff.show', compact('staff'));
+        $staff = Staff::find($id);
+        $classes = Staff::find($id)->classes();
+        $subjects = Staff::find($id)->subjects();
+        return view('staff.show', compact('staff', 'classes', 'subjects'));
     }
 
     /**
