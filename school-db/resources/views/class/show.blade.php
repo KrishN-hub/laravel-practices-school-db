@@ -3,6 +3,7 @@
         <title>Show Details</title>
         <style>
             table{
+                width: 10%
                 border:  1px solid #020202;
                 text-align: left;
                 border-collapse: collapse;

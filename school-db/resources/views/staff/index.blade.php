@@ -96,7 +96,7 @@
             @endforeach
         </table>
 
-        
+
 
     </body>
 </html>
